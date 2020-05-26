@@ -1,0 +1,9 @@
+<div>
+  <p>
+    The available Bouquets!!!!!
+  </p>
+  <p *ngFor="let bouquet of bouquets">
+    <app-show-bouquet *ngIf="bouquet.Quantity>0" [bouquet]="bouquet" (buyBouquet)="addToBuy(bouquet)" ></app-show-bouquet>
+  </p>
+</div>
+

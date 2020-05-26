@@ -1,0 +1,20 @@
+<p [hidden]="checkCart()">
+  Your cart is empty!!!!!
+</p>
+<div *ngFor="let bouquet of cart; let i = index">
+  <div>
+    ID:{{bouquet.Id}}
+    <br/>
+    Name:{{bouquet.Name}}
+    <br/>
+    Description:{{bouquet.Desc}}
+    <br/><br/>
+    Price:{{bouquet.Price | currency:"INR"}}
+    <br/>
+   Quantity in Cart: {{quan[i]}}
+   <hr/>
+   Total Price:{{bouquet.Price*quan[i]}}
+</div>
+  {{message}}
+
+</div>

@@ -1,0 +1,14 @@
+div{
+    height: 500px;
+    width:300px;
+    top:0px;
+    position: absolute;
+    background-color: antiquewhite;
+    float:left;
+}
+.divDisplay{
+    left:350px;
+}
+.divDisplayCart{
+    left:680px; 
+}

@@ -1,0 +1,18 @@
+<p>
+  <label class="form-control" for="txtID">Bouquet ID</label>
+  <input class="form-control" id="txtID" [(ngModel)]="Id"/>
+  <label class="form-control" for="txtName">Bouquet Name</label>
+  <input class="form-control" id="txtName" [(ngModel)]="Name"/>
+  <label class="form-control" for="txtDesc">Bouquet Description</label>
+  <textarea class="form-control" id="txtDesc" rows="3" [(ngModel)]="Desc"></textarea>
+  <label class="form-control" for="txtPrice">Bouquet Price</label>
+  <input class="form-control" id="txtPrice" [(ngModel)]="Price"/>
+  <label class="form-control" for="txtQty">Bouquet Quantity</label>
+  <input class="form-control" id="txtQty" [(ngModel)]="Quantity"/>
+  <button class="btn btn-success" (click)="addBouquet()">Add Bouquet</button>
+  <button class="btn btn-danger">Reset</button>
+</p>
+<p>
+  {{message}}
+</p>
+<div class="alert alert-success">This is the change</div>
